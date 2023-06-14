@@ -1,16 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   AOS.init();
 
-  const tabs = document.querySelectorAll(".tabs__item");
-  tabs.forEach(tab => {
-    const hammer = new Hammer(tab);
-    hammer.on("swipeleft", () => {
-    setActiveTab(2)
-    });
-    hammer.on("swiperight", () => {
-        setActiveTab(1)
-    });
-  });
 
   // *********************************   slider  ******************************************
   const swiper = new Swiper(".swiper", {
