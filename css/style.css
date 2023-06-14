@@ -12669,6 +12669,7 @@ input:checked + .slider:before {
     -webkit-box-pack: normal;
     -ms-flex-pack: normal;
     justify-content: normal;
+    margin-bottom: 2rem;
   }
   .payment__top::-webkit-scrollbar {
     display: none;
