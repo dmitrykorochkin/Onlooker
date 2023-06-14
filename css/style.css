@@ -4381,7 +4381,7 @@ img {
   .mode__nav {
     width: 60rem;
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
+    overflow-x: scroll;
     padding-bottom: 2rem;
     -ms-touch-action: pan-x;
     touch-action: pan-x;
