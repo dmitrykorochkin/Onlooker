@@ -4380,7 +4380,6 @@ img {
 @media (max-width: 48em) {
   .mode__nav {
     width: 60rem;
-    -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     padding-bottom: 2rem;
     -ms-touch-action: pan-x;
