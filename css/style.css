@@ -4380,12 +4380,8 @@ img {
 @media (max-width: 48em) {
   .mode__nav {
     width: 60rem;
-    overflow-x: auto;
+    overflow: auto;
     padding-bottom: 2rem;
-  }
-  .mode__nav::-webkit-scrollbar {
-    display: none;
-    /* Убирает линию скролла */
   }
 }
 .tabs__item {
