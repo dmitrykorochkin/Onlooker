@@ -4380,9 +4380,11 @@ img {
 @media (max-width: 48em) {
   .mode__nav {
     width: 60rem;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 3rem;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
   }
   .mode__nav::-webkit-scrollbar {
     display: none;
