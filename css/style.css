@@ -11183,8 +11183,9 @@ input:checked + .slider:before {
 @media (max-width: 48em) {
   .examination__wrap {
     width: 60rem;
-    overflow-y: scroll;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    padding-bottom: 2rem;
   }
   .examination__wrap::-webkit-scrollbar {
     display: none;

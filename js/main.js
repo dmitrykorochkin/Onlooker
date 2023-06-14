@@ -5,12 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
   tabs.forEach(tab => {
     const hammer = new Hammer(tab);
     hammer.on("swipeleft", () => {
-      // переключение на следующую вкладку
-      // например: setActiveTab(2)
+    setActiveTab(2)
     });
     hammer.on("swiperight", () => {
-      // переключение на предыдущую вкладку
-      // например: setActiveTab(1)
+        setActiveTab(1)
     });
   });
 
