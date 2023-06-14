@@ -4382,6 +4382,9 @@ img {
     width: 60rem;
     overflow: auto;
     padding-bottom: 2rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 .tabs__item {
