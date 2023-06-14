@@ -4380,7 +4380,7 @@ img {
 @media (max-width: 48em) {
   .mode__nav {
     width: 60rem;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding-bottom: 2rem;
   }
 }
@@ -14029,9 +14029,6 @@ input:checked + .slider:before {
     width: 60rem;
     overflow-x: scroll;
     padding-bottom: 2rem;
-    -webkit-overflow-scrolling: touch;
-    -ms-touch-action: pan-x;
-    touch-action: pan-x;
   }
   .alert__tabs::-webkit-scrollbar {
     display: none;
