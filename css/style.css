@@ -4382,12 +4382,6 @@ img {
     width: 60rem;
     overflow-x: auto;
     padding-bottom: 2rem;
-    -ms-touch-action: pan-x;
-    touch-action: pan-x;
-  }
-  .mode__nav::-webkit-scrollbar {
-    display: none;
-    /* Убирает линию скролла */
   }
 }
 .tabs__item {
