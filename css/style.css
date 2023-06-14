@@ -14030,8 +14030,11 @@ input:checked + .slider:before {
   }
   .alert__tabs {
     width: 60rem;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
     -webkit-overflow-scrolling: touch;
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
   }
   .alert__tabs::-webkit-scrollbar {
     display: none;
