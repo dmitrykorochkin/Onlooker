@@ -4382,6 +4382,7 @@ img {
     width: 60rem;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
   }
   .mode__nav::-webkit-scrollbar {
     display: none;
