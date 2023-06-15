@@ -13964,15 +13964,6 @@ input:checked + .slider:before {
 .alert__tab .text3 {
   width: 30rem;
 }
-.alert__tab:hover {
-  color: #22A699;
-  border: 0.1rem solid #22A699;
-  -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
-  filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
-}
-.alert__tab:hover .alert__tab-text {
-  color: #06B0A1;
-}
 
 .active-tab {
   color: #06B0A1;
