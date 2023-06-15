@@ -13980,8 +13980,8 @@ input:checked + .slider:before {
 .active-tab {
   border: 0.1rem solid #0ABD92;
   color: rgb(6, 176, 161);
-  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
-  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
+  -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
+  filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
 }
 .active-tab .examination__video-text,
 .active-tab .examination__article-text,
@@ -13995,14 +13995,7 @@ input:checked + .slider:before {
   .alert__tab {
     width: 40rem;
   }
-  .alert__tab:hover {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: inherit;
-  }
-  .alert__tab:hover .alert__tab-text {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .alert__tab-text {
+  .alert__tab .alert__tab-text {
     width: 30rem;
   }
 }
