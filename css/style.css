@@ -13965,8 +13965,8 @@ input:checked + .slider:before {
   width: 30rem;
 }
 .alert__tab:hover {
-  color: #06B0A1;
-  border: 0.1rem solid #0ABD92;
+  color: #22A699;
+  border: 0.1rem solid #22A699;
   -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
   filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
 }
