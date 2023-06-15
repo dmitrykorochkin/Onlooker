@@ -14003,10 +14003,10 @@ input:checked + .slider:before {
   }
   .alert__tab:hover {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.3);
+    color: inherit;
   }
   .alert__tab:hover .alert__tab-text {
-    color: inherit;
+    color: rgba(255, 255, 255, 0.3);
   }
   .alert__tab-text {
     width: 30rem;
