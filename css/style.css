@@ -13969,7 +13969,10 @@ input:checked + .slider:before {
   color: #06B0A1;
   border: 0.1rem solid #0ABD92;
 }
-.active-tab .alert__tab-icon {
+.active-tab .alert__tab-icon,
+.active-tab .examination__video-icon,
+.active-tab .examination__article-icon,
+.active-tab .examination__reviews-icon {
   -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
   filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
