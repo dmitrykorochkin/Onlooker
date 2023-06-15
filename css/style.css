@@ -14001,6 +14001,13 @@ input:checked + .slider:before {
   .alert__tab {
     width: 40rem;
   }
+  .alert__tab:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: inherit;
+  }
+  .alert__tab:hover .alert__tab-text {
+    color: inherit;
+  }
   .alert__tab-text {
     width: 30rem;
   }
