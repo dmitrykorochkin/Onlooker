@@ -13992,7 +13992,6 @@ input:checked + .slider:before {
   opacity: 1;
   color: rgb(6, 176, 161);
 }
-.active-tab .alert__tab-text,
 .active-tab .examination__video-text,
 .active-tab .examination__article-text,
 .active-tab .examination__reviews-text,
