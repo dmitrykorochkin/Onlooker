@@ -13999,7 +13999,7 @@ input:checked + .slider:before {
 
 @media (max-width: 48em) {
   .alert__tab {
-    width: 60rem;
+    width: 40rem;
   }
   .alert__tab-text {
     width: 30rem;
@@ -14028,10 +14028,11 @@ input:checked + .slider:before {
     width: 60rem;
     overflow-x: scroll;
     padding-bottom: 2rem;
-  }
-  .alert__tabs::-webkit-scrollbar {
-    display: none;
-    /* Убирает линию скролла */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 .alert__left {
