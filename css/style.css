@@ -13974,8 +13974,8 @@ input:checked + .slider:before {
   width: 30rem;
 }
 .alert__tab:hover {
-  border: 0.1rem solid #0ABD92;
-  color: #0ABD92;
+  border: 0.1rem solid rgb(6, 176, 161);
+  color: rgb(6, 176, 161);
 }
 .alert__tab:hover .alert__tab-text {
   color: rgb(6, 176, 161);
@@ -13985,8 +13985,6 @@ input:checked + .slider:before {
   border: 0.1rem solid #0ABD92;
   color: rgb(6, 176, 161);
   opacity: 1;
-  -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
-  filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
 }
 .active-tab img {
   opacity: 1;
@@ -13999,8 +13997,6 @@ input:checked + .slider:before {
 .active-tab .answers__text {
   color: rgb(6, 176, 161);
   opacity: 1;
-  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
-  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
 
 @media (max-width: 48em) {
