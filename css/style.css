@@ -13975,8 +13975,10 @@ input:checked + .slider:before {
 }
 
 .active-tab {
+  color: #06B0A1;
   border: 0.1rem solid #0ABD92;
-  color: rgb(6, 176, 161);
+  -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
+  filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
 }
 .active-tab .alert__tab-icon {
   -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
@@ -13988,7 +13990,7 @@ input:checked + .slider:before {
 .active-tab .examination__reviews-text,
 .active-tab .pay__text,
 .active-tab .answers__text {
-  color: rgb(6, 176, 161);
+  color: #06B0A1;
 }
 
 @media (max-width: 48em) {
