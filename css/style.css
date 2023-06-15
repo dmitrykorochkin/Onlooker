@@ -12793,9 +12793,6 @@ input:checked + .slider:before {
   width: 3.1rem;
   height: 4.4rem;
 }
-.alert__tab-icon:hover {
-  stroke: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
-}
 
 .alert__img-car {
   width: 35.3rem;
@@ -13984,19 +13981,20 @@ input:checked + .slider:before {
 .active-tab {
   border: 0.1rem solid #0ABD92;
   color: rgb(6, 176, 161);
-  opacity: 1;
+  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
-.active-tab img {
-  opacity: 1;
-  color: rgb(6, 176, 161);
+.active-tab .alert__tab-icon:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
+.active-tab .alert__tab-text,
 .active-tab .examination__video-text,
 .active-tab .examination__article-text,
 .active-tab .examination__reviews-text,
 .active-tab .pay__text,
 .active-tab .answers__text {
   color: rgb(6, 176, 161);
-  opacity: 1;
 }
 
 @media (max-width: 48em) {
