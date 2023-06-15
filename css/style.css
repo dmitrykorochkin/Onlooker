@@ -13971,7 +13971,7 @@ input:checked + .slider:before {
   filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(86%) contrast(96%);
 }
 .alert__tab:hover .alert__tab-text {
-  color: rgb(6, 176, 161);
+  color: #06B0A1;
 }
 
 .active-tab {
