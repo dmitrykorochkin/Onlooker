@@ -5816,7 +5816,8 @@ input:hover {
   cursor: pointer;
 }
 .interface__item:hover:hover {
-  -webkit-filter: invert(50%) sepia(17%) saturate(5572%) hue-rotate(139deg) brightness(120%) contrast(96%);
+  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
 .interface__item:hover .interface__text:hover {
   color: #08f1de;
@@ -11484,7 +11485,7 @@ input:checked + .slider:before {
   .examination__img-otzov-mob {
     display: block;
     position: relative;
-    top: 13rem;
+    top: 11rem;
     width: 60rem;
     height: 22rem;
   }
@@ -12658,9 +12659,11 @@ input:checked + .slider:before {
     -ms-flex-align: center;
     align-items: center;
     width: 60rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-left: 2rem;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     -webkit-box-pack: normal;
     -ms-flex-pack: normal;
     justify-content: normal;
@@ -13972,7 +13975,10 @@ input:checked + .slider:before {
 .active-tab .alert__tab-icon,
 .active-tab .examination__video-icon,
 .active-tab .examination__article-icon,
-.active-tab .examination__reviews-icon {
+.active-tab .examination__reviews-icon,
+.active-tab .pay__icon,
+.active-tab .answers__icon,
+.active-tab .tabs__item-img {
   -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
   filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(1864%) hue-rotate(130deg) brightness(99%) contrast(92%);
 }
