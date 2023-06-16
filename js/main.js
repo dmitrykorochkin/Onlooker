@@ -593,37 +593,19 @@ Array.from(closeButtons).forEach(button => {
   modals();
 
 const modalPromotion = () => {
-  const offer = document.querySelector(".offer");
   const buttonProm = document.querySelectorAll(".offer__wrap-link");
   const modalsProm = document.querySelectorAll(".modal__promotion-one");
-  let scrollPosition = 0;
 
-  const openModal = modal => {
-    modal.style.display = "block";
-    if (window.innerWidth > document.documentElement.clientWidth) {
-      // если есть вертикальный скролл, сохраняем текущую позицию
-      scrollPosition = window.pageYOffset;
-      document.body.style.top = -scrollPosition + "px";
-    }
-    document.addEventListener("keydown", closeModalOnESC);
-  };
 
-  const closeModal = modal => {
-    modal.style.display = "none";
-    document.body.style.overflow = ""; // восстанавливаем скролл на странице
-    document.removeEventListener("keydown", closeModalOnESC);
+ const openModal = modal => {
+   modal.style.display = "block";
+   document.addEventListener("keydown", closeModalOnESC);
+ };
 
-    // Проверяем, был ли скролл на странице до открытия модального окна
-    if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
-    }
-
-    if (offer.scrollHeight > offer.clientHeight) {
-      // Если высота контейнера превышает видимую высоту,
-      // то добавляем вертикальный скролл
-      offer.style.overflowY = "auto";
-    }
-  };
+    const closeModal = modal => {
+      modal.style.display = "none";
+      document.removeEventListener("keydown", closeModalOnESC);
+    };
 
   const closeModalOnESC = event => {
     if (event.keyCode === 27) {

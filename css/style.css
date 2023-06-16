@@ -3008,6 +3008,7 @@ img {
 
 @media (max-width: 48em) {
   .camers__footer {
+    width: 60rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -15876,28 +15877,24 @@ input:checked + .slider:before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 999;
-  /* overflow: hidden; */
   display: none;
 }
 
 .modal__promotion-block {
-  width: 75rem;
-  position: fixed;
-  width: 60rem;
-  font-size: 2rem;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0 auto;
-  padding: 3rem;
+  position: relative;
+  width: 85rem;
+  height: 62rem;
   background: -o-linear-gradient(174.02deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
   background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
   -webkit-box-shadow: 0px 0px 249px rgba(12, 148, 125, 0.27);
   box-shadow: 0px 0px 249px rgba(12, 148, 125, 0.27);
   border-radius: 2rem;
-  padding-left: 5rem;
+  padding: 4.4rem 5.6rem;
 }
 
 .modal__promotion-title {
@@ -15953,17 +15950,6 @@ input:checked + .slider:before {
   .modal__promotion-block {
     width: 60rem;
     font-size: 2rem;
-    top: 70%;
-  }
-  .modal__promotion-one {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100%;
-    height: 325%;
-    top: 50%;
-    left: 50%;
-    z-index: 999;
-    overflow: hidden;
   }
   .modal__promotion-text {
     font-size: 2rem;
