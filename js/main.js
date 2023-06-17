@@ -5,20 +5,23 @@ document.addEventListener("DOMContentLoaded", function() {
   // *********************************   slider  ******************************************
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
-    spaceBetween: 70,
+    spaceBetween: 40,
 
     pagination: {
       el: ".swiper-pagination",
       type: "bullets"
     },
-    autoplay: {
-      delay: 5000
-    },
+    // autoplay: {
+    //   delay: 5000
+    // },
     breakpoints: {
       768: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        spaceBetween: 40,
       }
     },
+
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -47,25 +50,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-if (window.innerWidth <= 767) {
-  const swiper3 = new Swiper("#swiper3", {
-    slidesPerView: 1,
-    spaceBetween: 70,
-    loop: false,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets"
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-      hideOnClick: true
-    },
-    autoplay: {
-      delay: 5000
-    }
-  });
-}
+window.onload = function() {
+  if (window.innerWidth <= 767) {
+    const swiper3 = new Swiper("#swiper3", {
+      slidesPerView: 1,
+      spaceBetween: 70,
+      loop: false,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        hideOnClick: true
+      },
+      autoplay: {
+        delay: 5000
+      }
+    });
+  }
+};
 
 
 
@@ -595,17 +600,23 @@ Array.from(closeButtons).forEach(button => {
 const modalPromotion = () => {
   const buttonProm = document.querySelectorAll(".offer__wrap-link");
   const modalsProm = document.querySelectorAll(".modal__promotion-one");
+  const offer = document.querySelector(".offer");
 
+  let scrollTopPosition;
 
- const openModal = modal => {
-   modal.style.display = "block";
-   document.addEventListener("keydown", closeModalOnESC);
- };
+  const openModal = modal => {
+    scrollTopPosition = window.pageYOffset; // сохраняем текущее положение страницы
+    modal.style.display = "block";
+    offer.style.overflow = "hidden"; // скрываем скролл на блоке offer
+    document.addEventListener("keydown", closeModalOnESC);
+  };
 
-    const closeModal = modal => {
-      modal.style.display = "none";
-      document.removeEventListener("keydown", closeModalOnESC);
-    };
+  const closeModal = modal => {
+    modal.style.display = "none";
+    offer.style.overflow = "auto"; // показываем скролл на блоке offer
+    window.scrollTo(0, scrollTopPosition); // устанавливаем сохраненное положение страницы
+    document.removeEventListener("keydown", closeModalOnESC);
+  };
 
   const closeModalOnESC = event => {
     if (event.keyCode === 27) {
@@ -647,6 +658,7 @@ const modalPromotion = () => {
 };
 
 modalPromotion();
+
 
 
 
