@@ -11226,7 +11226,6 @@ input:checked + .slider:before {
 
 @media (max-width: 48em) {
   .examination__wrap {
-    width: 63rem;
     overflow-y: scroll;
     padding-bottom: 2rem;
   }
