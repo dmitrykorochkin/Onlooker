@@ -35,13 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
       pagination: {
         el: ".swiper-pagination",
-        type: "bullets",
-        
+        type: "bullets"
       },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-        
+        hideOnClick: false
       },
       autoplay: {
         delay: 5000
