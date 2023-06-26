@@ -2957,9 +2957,6 @@ img {
   }
   .swiper-slide {
     width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .camers__list {
     display: -webkit-box;
@@ -11546,7 +11543,10 @@ input:checked + .slider:before {
   }
   .examination__img-otzov-mob {
     display: block;
-    width: 50rem;
+    position: relative;
+    top: 12rem;
+    width: 60rem;
+    height: 22rem;
   }
 }
 .examination__subtitle {
@@ -11696,13 +11696,13 @@ input:checked + .slider:before {
   .swiper-button-prev {
     width: 4rem;
     height: 4rem;
-    top: 53%;
+    top: 110rem;
     left: 1rem;
   }
   .swiper-button-next {
     width: 4rem;
     height: 4rem;
-    top: 53%;
+    top: 110rem;
     right: 1rem;
   }
   .swiper-button-next #swiper-button-next-otzov {
@@ -12016,7 +12016,9 @@ input:checked + .slider:before {
   text-align: center;
   letter-spacing: 0.01em;
   color: #06B0A1;
-  border: 0.3rem solid #06B0A1;
+  -webkit-filter: drop-shadow(-4.70126px 4.70126px 47.0126px rgba(113, 175, 170, 0.16)) drop-shadow(0px 23.5063px 38.2622px rgba(0, 0, 0, 0.21));
+  filter: drop-shadow(-4.70126px 4.70126px 47.0126px rgba(113, 175, 170, 0.16)) drop-shadow(0px 23.5063px 38.2622px rgba(0, 0, 0, 0.21));
+  border: 0.1rem solid #06B0A1;
   border-radius: 7.4rem;
 }
 
