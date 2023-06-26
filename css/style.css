@@ -847,8 +847,29 @@ img {
 }
 
 @media (max-width: 48em) {
-  .bg__elem {
+  .bg__elem-1 {
     display: none;
+  }
+  .bg__element__4 {
+    left: 0;
+  }
+  .bg__element__5 {
+    left: 0;
+  }
+  .bg__element__6 {
+    left: 0;
+  }
+  .bg__element__7 {
+    left: 0;
+  }
+  .bg__element__8 {
+    left: 0;
+  }
+  .bg__element__9 {
+    left: 0;
+  }
+  .bg__element__10 {
+    left: 0;
   }
 }
 .button {
@@ -1779,6 +1800,7 @@ img {
     height: 60rem;
     left: -56rem;
     top: 35rem;
+    z-index: 1;
   }
 }
 .reg__name {
@@ -1907,6 +1929,8 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
   }
   .device__item {
     text-align: center;
