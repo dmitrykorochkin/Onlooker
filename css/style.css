@@ -2915,6 +2915,12 @@ img {
 }
 
 @media (max-width: 48em) {
+  .examination__info {
+    margin-bottom: 0 !important;
+  }
+  .swiper-slider3 {
+    height: 35rem !important;
+  }
   .camers .swiper {
     display: block;
   }
@@ -11701,13 +11707,13 @@ input:checked + .slider:before {
   .swiper-button-prev {
     width: 4rem;
     height: 4rem;
-    top: 53%;
+    top: 54%;
     left: 1rem;
   }
   .swiper-button-next {
     width: 4rem;
     height: 4rem;
-    top: 53%;
+    top: 54%;
     right: 1rem;
   }
   .swiper-button-next #swiper-button-next-otzov {
