@@ -847,29 +847,8 @@ img {
 }
 
 @media (max-width: 48em) {
-  .bg__elem-1 {
+  .bg__elem {
     display: none;
-  }
-  .bg__element__4 {
-    left: 0;
-  }
-  .bg__element__5 {
-    left: 0;
-  }
-  .bg__element__6 {
-    left: 0;
-  }
-  .bg__element__7 {
-    left: 0;
-  }
-  .bg__element__8 {
-    left: 0;
-  }
-  .bg__element__9 {
-    left: 0;
-  }
-  .bg__element__10 {
-    left: 0;
   }
 }
 .button {
@@ -1800,7 +1779,6 @@ img {
     height: 60rem;
     left: -56rem;
     top: 35rem;
-    z-index: 1;
   }
 }
 .reg__name {
@@ -1929,8 +1907,6 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: relative;
-    z-index: 2;
   }
   .device__item {
     text-align: center;
@@ -2981,7 +2957,15 @@ img {
   }
   .swiper-slide {
     width: 30rem;
+    
   }
+
+  .swiper-slider3 .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .camers__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11567,10 +11551,7 @@ input:checked + .slider:before {
   }
   .examination__img-otzov-mob {
     display: block;
-    position: relative;
-    top: 12rem;
-    width: 60rem;
-    height: 22rem;
+    width: 50rem;
   }
 }
 .examination__subtitle {
@@ -11720,13 +11701,13 @@ input:checked + .slider:before {
   .swiper-button-prev {
     width: 4rem;
     height: 4rem;
-    top: 110rem;
+    top: 53%;
     left: 1rem;
   }
   .swiper-button-next {
     width: 4rem;
     height: 4rem;
-    top: 110rem;
+    top: 53%;
     right: 1rem;
   }
   .swiper-button-next #swiper-button-next-otzov {
@@ -12040,9 +12021,7 @@ input:checked + .slider:before {
   text-align: center;
   letter-spacing: 0.01em;
   color: #06B0A1;
-  -webkit-filter: drop-shadow(-4.70126px 4.70126px 47.0126px rgba(113, 175, 170, 0.16)) drop-shadow(0px 23.5063px 38.2622px rgba(0, 0, 0, 0.21));
-  filter: drop-shadow(-4.70126px 4.70126px 47.0126px rgba(113, 175, 170, 0.16)) drop-shadow(0px 23.5063px 38.2622px rgba(0, 0, 0, 0.21));
-  border: 0.1rem solid #06B0A1;
+  border: 0.3rem solid #06B0A1;
   border-radius: 7.4rem;
 }
 
